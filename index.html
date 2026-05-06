@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Trading AI Agent | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Real-time Crypto Trading AI Agent providing live Bitcoin analysis and trading recommendations.">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="icon">🤖</span>
+                <h1>CryptoAgent <span class="badge">AI</span></h1>
+            </div>
+            <div class="status-bar">
+                <div class="status-item">
+                    <span class="dot pulse"></span>
+                    <span class="label">Live Market</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="market-overview">
+                <div class="card price-card" id="btc-card">
+                    <div class="card-header">
+                        <img src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png" alt="BTC">
+                        <h3>Bitcoin</h3>
+                        <span class="ticker">BTC/USD</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price" id="btc-price">$81,550.00</div>
+                        <div class="change positive" id="btc-change">+1.8%</div>
+                    </div>
+                </div>
+                <div class="card price-card" id="eth-card">
+                    <div class="card-header">
+                        <img src="https://assets.coingecko.com/coins/images/279/small/ethereum.png" alt="ETH">
+                        <h3>Ethereum</h3>
+                        <span class="ticker">ETH/USD</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price" id="eth-price">$2,352.40</div>
+                        <div class="change positive" id="eth-change">+0.4%</div>
+                    </div>
+                </div>
+                <div class="card price-card" id="sol-card">
+                    <div class="card-header">
+                        <img src="https://assets.coingecko.com/coins/images/4128/small/solana.png" alt="SOL">
+                        <h3>Solana</h3>
+                        <span class="ticker">SOL/USD</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price" id="sol-price">$87.12</div>
+                        <div class="change positive" id="sol-change">+3.2%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="agent-console">
+                <div class="card console-card">
+                    <div class="card-header">
+                        <div class="title-group">
+                            <h3>AI Trading Multi-Agent</h3>
+                            <p class="subtitle">Real-time Analysis for Top Assets</p>
+                        </div>
+                        <button id="run-agent-btn" class="primary-btn">
+                            <span class="btn-icon">⚡</span> Run Global Analysis
+                        </button>
+                    </div>
+                    <div class="console-output" id="console-output">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">Global Workflow Execution Log</span>
+                        </div>
+                        <div class="terminal-body" id="terminal-log">
+                            <p class="system-msg">> Multi-agent system ready. Awaiting trigger...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="signals-grid" id="signals-grid">
+                <!-- Dynamic Signal Cards will be injected here -->
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 CryptoAgent AI. For educational purposes only.</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
